@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Analise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="containerBoxes">
+    <div class="box" style="margin: 1.5vw; margin-left: 4vw; margin-top: 4vh;">
+      <img class="precos" id="btc-logo" src="./images/bitcoinlogo.png">
+      <span class="boxItem">
+        <h2>Preço atual:</h2>
+        <h2 class="precos" id="precoBTC">...</h2>
+      </span>
+      <span class="boxItem">
+        <h2>Maior preço em 24h:</h2>
+        <h2 class="precos" id="precoMAX">...</h2>
+      </span>
+      <span class="boxItem">
+        <h2>Menor preço em 24h:</h2>
+        <h2 class="precos" id="precoMIN">...</h2>
+      </span>
+      <span class="boxItem">
+        <h2>Variação em 24h:</h2>
+        <h2 class="precos" id="variacao">...</h2>
+      </span>
+    </div>
+    <div class="containerRight">
+      <div class="box" style="width: 27vw; display: flex; flex-direction: column; align-items: center; margin-bottom: 2vh;">
+        <span style="display: flex; align-items: center; justify-content: center;"><img  id="money" src="./images/money.png"><h2 style="display: inline-block;">Meu saldo:</h2></span>
+        <h2 class="precos" style="margin-top: 1vw; color: green;">$9999</h2>
+      </div>
+      <div class="bigBox">
+        <span><img id="wallet" src="./images/wallet.png"><h2>Histórico de transações</h2></span>
+      </div>
+      <div>
+        <button id="iniciar">Iniciar</button>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Gráfico BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_38a5b"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "BINANCE:JOEUSDT",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "hide_legend": true,
+  "save_image": false,
+  "hide_volume": true,
+  "container_id": "tradingview_38a5b"
+}
+  );
+  </script>
+</div>
+<!-- Gráfico END -->
+  <script src="./app.js"></script>
+</body>
+
+</html>

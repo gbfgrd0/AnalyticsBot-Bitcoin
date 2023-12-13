@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+body{
+    overflow: hidden;
+}
+h2{
+    color: white;
+    font-size: 2.2vh;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+#btc-logo{
+    width: 7vw;
+}
+
+#tradingview_38a5b{
+    width: 70%;
+    height: 70vh;
+    border: 3px solid white;
+}
+
+.tradingview-widget-container{
+    position: absolute;
+    bottom: 2vh;
+    left: 1vw;
+    width: 100vw;
+}
+
+.precos{
+    color: white;
+    font-size: 2.6vh;
+    font-weight: 700;
+}
+
+
+.box{
+    height: max-content;
+    width: 80vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    border: white solid 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxItem{
+    margin-left: 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerBoxes{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerRight{
+    margin-top: 4vh;
+    width: 35vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.bigBox{
+    height: 60vh;
+    width: 27vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    border: white solid 3px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+}
+
+#money{
+    width: 3.5vw;
+    float: left;
+    margin-right: 1vw;
+}
+
+#wallet{
+    width: 2vw;
+    float: left;
+    margin-right: 1.5vw;
+}
+
+#iniciar{
+    width: 27vw;
+    height: 8vh;
+    background-color: rgb(6, 63, 6);
+    color: white;
+    font-size: 30px;
+    border-radius: 1cqi;
+    border: none;
+}
